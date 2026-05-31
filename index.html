@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osvaldo Ortega Martinez | Software Engineering Leader & Cloud Architect</title>
-    <meta name="description" content="Personal portfolio of Osvaldo Ortega Martinez, a Software Engineering Leader & Cloud Solutions Architect with over 18 years of experience. Specializing in high-performance teams, rapid prototyping, and Generative AI.">
+    <meta name="description" content="Personal portfolio of Osvaldo Ortega Martinez, a Senior Software Engineering Technical Lead & Cloud Solutions Architect with nearly 20 years of experience.">
     <meta name="color-scheme" content="light dark">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Osvaldo Ortega Martinez | Software Engineering Leader & Cloud Architect">
-    <meta property="og:description" content="Software Engineering Leader with 18+ years of experience. Expert in Cloud Solutions, Event-Driven Architectures, and Generative AI rapid prototyping.">
+    <meta property="og:description" content="Senior Software Engineering Technical Lead with 20 years of experience. Expert in Cloud Solutions, DevOps, and AI-assisted engineering workflows.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.tellmeoz.dev/">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Theme Initializer (Avoids FOUC for localStorage preference) -->
+    <!-- Theme and Lang Initializer (Avoids FOUC for localStorage settings) -->
     <script>
         {
             const theme = localStorage.getItem("theme");
             if (theme === "light" || theme === "dark") {
                 document.documentElement.setAttribute("data-theme", theme);
             }
+            const lang = localStorage.getItem("lang") || "es";
+            document.documentElement.setAttribute("lang", lang);
         }
     </script>
     
@@ -41,18 +43,42 @@
     <header class="site-header">
         <div class="nav-container">
             <a href="#" class="nav-logo" id="nav-logo">tellme<span class="logo-accent">oz</span></a>
+            
             <nav class="nav-menu" aria-label="Main Navigation">
-                <a href="#about" class="nav-link" id="nav-link-about">Sobre Mí</a>
-                <a href="#experience" class="nav-link" id="nav-link-exp">Experiencia</a>
-                <a href="#projects" class="nav-link" id="nav-link-proj">Exploraciones</a>
-                <a href="#blog" class="nav-link" id="nav-link-blog">Blog</a>
+                <a href="#about" class="nav-link" id="nav-link-about">
+                    <span lang="es">Sobre Mí</span>
+                    <span lang="en">About Me</span>
+                </a>
+                <a href="#experience" class="nav-link" id="nav-link-exp">
+                    <span lang="es">Experiencia</span>
+                    <span lang="en">Experience</span>
+                </a>
+                <a href="#projects" class="nav-link" id="nav-link-proj">
+                    <span lang="es">Proyectos</span>
+                    <span lang="en">Projects</span>
+                </a>
+                <a href="#contact" class="nav-link" id="nav-link-contact-nav">
+                    <span lang="es">Contacto</span>
+                    <span lang="en">Contact</span>
+                </a>
             </nav>
+
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light and dark theme">
-                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <!-- Language Switcher Toggle -->
+                <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch Language / Cambiar Idioma">
+                    <span class="lang-label" id="lang-toggle-label">EN</span>
                 </button>
-                <a href="mailto:me@tellmeoz.dev" class="btn-primary" id="header-contact-btn">Contacto</a>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light and dark theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+
+                <a href="#contact" class="btn-primary-sm" id="header-contact-btn">
+                    <span lang="es">Escríbeme</span>
+                    <span lang="en">Get in Touch</span>
+                </a>
             </div>
         </div>
     </header>
@@ -61,13 +87,32 @@
         <!-- Hero Section -->
         <section class="hero-section" id="hero">
             <div class="hero-content">
-                <div class="badge" id="hero-badge">Disponible para Prototipado Rápido</div>
+                <div class="badge" id="hero-badge">
+                    <span lang="es">Liderazgo &amp; Arquitectura Cloud</span>
+                    <span lang="en">Leadership &amp; Cloud Architecture</span>
+                </div>
                 <h1 class="hero-title">Osvaldo Ortega Martinez</h1>
-                <p class="hero-subtitle">Software Engineering Leader &amp; Cloud Solutions Architect</p>
-                <p class="hero-desc">Especialista en escalar operaciones de ingeniería, diseñar arquitecturas robustas y prototipar soluciones innovadoras con IA Generativa.</p>
+                <p class="hero-subtitle">
+                    <span lang="es">Senior Technical Lead &amp; Cloud Solutions Architect</span>
+                    <span lang="en">Senior Technical Lead &amp; Cloud Solutions Architect</span>
+                </p>
+                
+                <p class="hero-desc" lang="es">
+                    Líder de Ingeniería de Software con cerca de 20 años de experiencia construyendo sistemas distribuidos, nativos de la nube y full-stack. Especialista en optimizar flujos con IA Generativa, DevOps y liderar equipos de alto rendimiento en entornos globales.
+                </p>
+                <p class="hero-desc" lang="en">
+                    Senior Software Engineering Technical Lead with nearly 20 years of experience building full-stack, cloud-native, and distributed systems. Expert in Generative AI workflows, DevOps, and leading high-performance engineering teams globally.
+                </p>
+
                 <div class="hero-buttons">
-                    <a href="#about" class="btn-secondary" id="hero-learn-more">Conóceme más</a>
-                    <a href="mailto:me@tellmeoz.dev" class="btn-primary" id="hero-contact-mail">me@tellmeoz.dev</a>
+                    <a href="#about" class="btn-secondary" id="hero-learn-more">
+                        <span lang="es">Sobre Mí</span>
+                        <span lang="en">Read Bio</span>
+                    </a>
+                    <a href="#contact" class="btn-primary" id="hero-contact-mail">
+                        <span lang="es">Contactar</span>
+                        <span lang="en">Contact Me</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -76,54 +121,83 @@
         <section class="section-container" id="about">
             <div class="section-grid">
                 <div class="about-card glass-panel">
-                    <h2 class="section-title">Sobre Mí</h2>
-                    <p class="section-text">
-                        Con más de 18 años de trayectoria en la industria tecnológica, lidero operaciones de ingeniería y arquitectura en la nube para entornos globales. Me apasiona traducir requerimientos de negocio complejos en plataformas técnicas de alto rendimiento, escalables y seguras.
-                    </p>
-                    <p class="section-text">
-                        Fundador de equipos de desarrollo y experto en operaciones críticas 24/7. Aplico tecnologías de frontera como GenAI (Gemini, ChatGPT) para acelerar el desarrollo de prototipos y validar arquitecturas avanzadas (Hexagonal, Event-Driven, Microservicios).
-                    </p>
+                    <h2 class="section-title">
+                        <span lang="es">Sobre Mí</span>
+                        <span lang="en">About Me</span>
+                    </h2>
+                    
+                    <div lang="es">
+                        <p class="section-text">
+                            Con cerca de 20 años de trayectoria en la industria de la tecnología, lidero operaciones de ingeniería y arquitectura en la nube en entornos globales y de alta escala. Me especializo en traducir requerimientos de negocio complejos en plataformas técnicas de alto rendimiento, escalables y seguras.
+                        </p>
+                        <p class="section-text">
+                            Actualmente, en **The Coca-Cola Company**, lidero un equipo regional de 5 líderes técnicos e ingenieros para toda Latinoamérica, diseñando soluciones nativas de la nube en AWS, Azure y GCP, automatizando tareas operativas e implementando flujos avanzados de observabilidad.
+                        </p>
+                        <p class="section-text">
+                            Soy un entusiasta del **prototipado rápido con IA** y la automatización del ciclo de desarrollo (SDLC) mediante el uso de herramientas como Copilot, ChatGPT, Claude Code y Gemini CLI.
+                        </p>
+                    </div>
+
+                    <div lang="en">
+                        <p class="section-text">
+                            With nearly 20 years of experience in the tech industry, I lead engineering operations and cloud architecture for global, high-scale environments. I specialize in translating complex business requirements into high-performance, scalable, and secure technical platforms.
+                        </p>
+                        <p class="section-text">
+                            Currently, at **The Coca-Cola Company**, I lead a regional team of 5 technical leads and engineers across Latin America, designing cloud-native solutions on AWS, Azure, and GCP, automating operations, and implementing advanced observability.
+                        </p>
+                        <p class="section-text">
+                            I am highly passionate about **rapid prototyping with AI** and automated software development lifecycles (SDLC) using tools like Copilot, ChatGPT, Claude Code, and Gemini CLI.
+                        </p>
+                    </div>
+
                     <div class="social-links">
                         <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="social-link" id="github-link" aria-label="GitHub Profile">
-                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                             GitHub
                         </a>
                         <a href="https://linkedin.com/in/tellmeoz" target="_blank" rel="noopener" class="social-link" id="linkedin-link" aria-label="LinkedIn Profile">
-                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                             LinkedIn
                         </a>
                     </div>
                 </div>
 
                 <div class="skills-card glass-panel">
-                    <h3 class="card-subtitle">Áreas de Enfoque</h3>
-                    <ul class="skills-list" aria-label="Focus Areas">
+                    <h3 class="card-subtitle">
+                        <span lang="es">Competencias Clave</span>
+                        <span lang="en">Core Competencies</span>
+                    </h3>
+                    <ul class="skills-list" aria-label="Competencies">
+                        <li class="skill-item">
+                            <span class="skill-icon">🤖</span>
+                            <div>
+                                <strong>AI &amp; Developer Productivity</strong>
+                                <p lang="es">IA Generativa, workflows impulsados por LLMs, Gemini CLI, Claude Code y automatización del SDLC.</p>
+                                <p lang="en">Generative AI, LLM-based workflows, Gemini CLI, Claude Code, and SDLC engineering automation.</p>
+                            </div>
+                        </li>
                         <li class="skill-item">
                             <span class="skill-icon">☁️</span>
                             <div>
-                                <strong>Arquitectura Cloud</strong>
-                                <p>Sistemas distribuidos, hexagonal, microservicios y event-driven.</p>
+                                <strong>Software Architecture</strong>
+                                <p lang="es">Arquitectura limpia, hexagonal, event-driven, microservicios y sistemas distribuidos.</p>
+                                <p lang="en">Clean Architecture, Hexagonal, Event-Driven, Microservices, and Distributed Systems.</p>
                             </div>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-icon">👥</span>
+                            <span class="skill-icon">🛠️</span>
                             <div>
-                                <strong>Liderazgo de Equipos</strong>
-                                <p>Crecimiento de talento, cultura ágil y operaciones regionales.</p>
+                                <strong>Platform &amp; Reliability</strong>
+                                <p lang="es">GCP (Cloud Run), AWS Serverless, Azure AD B2C, observabilidad integral e incident response.</p>
+                                <p lang="en">GCP (Cloud Run), AWS Serverless, Azure AD B2C, observability and incident response.</p>
                             </div>
                         </li>
                         <li class="skill-item">
-                            <span class="skill-icon">⚡</span>
+                            <span class="skill-icon">💻</span>
                             <div>
-                                <strong>Prototipado Rápido &amp; IA</strong>
-                                <p>Implementaciones exprés aceleradas por Gemini, ChatGPT y APIs avanzadas.</p>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <span class="skill-icon">🔒</span>
-                            <div>
-                                <strong>Operaciones 24/7</strong>
-                                <p>Estrategias de despliegue continuo, tolerancia a fallos y resiliencia.</p>
+                                <strong>Full-Stack Mastery</strong>
+                                <p lang="es">Dominio avanzado de Java, Node.js, JavaScript, TypeScript y frameworks web (Vue, React).</p>
+                                <p lang="en">Advanced mastery of Java, Node.js, JavaScript, TypeScript, and web frameworks (Vue, React).</p>
                             </div>
                         </li>
                     </ul>
@@ -131,24 +205,132 @@
             </div>
         </section>
 
-        <!-- Experience & Mindset Section -->
+        <!-- Experience Section -->
         <section class="section-container" id="experience">
-            <h2 class="section-header-title text-center">Filosofía de Trabajo</h2>
-            <div class="features-grid">
-                <div class="feature-card glass-panel">
-                    <div class="feature-number">18+</div>
-                    <h3 class="feature-title">Años de Experiencia</h3>
-                    <p class="feature-desc">Trayectoria sólida construyendo software desde startups hasta operaciones globales.</p>
+            <h2 class="section-header-title text-center">
+                <span lang="es">Experiencia Destacada</span>
+                <span lang="en">Professional Experience</span>
+            </h2>
+            <p class="section-subtitle-desc text-center">
+                <span lang="es">Trayectoria liderando equipos y arquitecturas de software críticas</span>
+                <span lang="en">A career building critical software and leading engineering teams</span>
+            </p>
+
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item glass-panel">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2023 – Present</span>
+                        <span class="timeline-company">The Coca-Cola Company</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">
+                            <span lang="es">Senior Technical Lead - MarTech LATAM</span>
+                            <span lang="en">Senior Technical Lead - MarTech LATAM</span>
+                        </h3>
+                        <div lang="es">
+                            <p class="timeline-desc">Lidero un equipo de 5 ingenieros y líderes técnicos a cargo de la evolución y confiabilidad de las plataformas regionales de MarTech en América Latina.</p>
+                            <ul class="timeline-bullets">
+                                <li>Diseño soluciones nativas de la nube en AWS, Azure y GCP, incluyendo APIs serverless e integraciones complejas de identidad.</li>
+                                <li>Automaticé tareas de ingeniería repetitivas (como tracking de credenciales) mediante un Self-Service Operations Hub con GitHub Actions.</li>
+                                <li>Establecí observabilidad integral con Azure Application Insights, KQL y AWS CloudWatch, optimizando el debugging de producción.</li>
+                            </ul>
+                        </div>
+                        <div lang="en">
+                            <p class="timeline-desc">Lead a team of 5 engineers and technical leads responsible for the evolution and reliability of regional MarTech platforms across Latin America.</p>
+                            <ul class="timeline-bullets">
+                                <li>Design cloud-native solutions across AWS, Azure, and GCP, including serverless APIs and complex identity integrations.</li>
+                                <li>Automated repetitive engineering tasks (such as credentials tracking) with a custom GitHub Actions Self-Service Hub.</li>
+                                <li>Implemented production observability and troubleshooting with Azure Application Insights, KQL, and AWS CloudWatch.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card glass-panel">
-                    <div class="feature-number">AI</div>
-                    <h3 class="feature-title">Eficiencia con GenAI</h3>
-                    <p class="feature-desc">Utilización activa de Large Language Models para automatizar, diseñar y refactorizar con agilidad.</p>
+
+                <!-- Job 2 -->
+                <div class="timeline-item glass-panel">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2021 – 2023</span>
+                        <span class="timeline-company">The Coca-Cola Company</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">
+                            <span lang="es">DevOps &amp; Software Engineer - Global MarTech</span>
+                            <span lang="en">DevOps &amp; Software Engineer - Global MarTech</span>
+                        </h3>
+                        <div lang="es">
+                            <p class="timeline-desc">Especialista técnico (SME) en políticas personalizadas de Azure AD B2C para flujos de identidad de audiencia a nivel global.</p>
+                            <ul class="timeline-bullets">
+                                <li>Desarrollé microservicios Node.js sobre arquitecturas AWS Serverless.</li>
+                                <li>Diseñé pipelines de integración continua y despliegues robustos para plataformas multinacionales.</li>
+                            </ul>
+                        </div>
+                        <div lang="en">
+                            <p class="timeline-desc">Subject Matter Expert (SME) in Azure AD B2C custom policies for global consumer identity management and authentication workflows.</p>
+                            <ul class="timeline-bullets">
+                                <li>Developed Node.js microservices on AWS Serverless architectures.</li>
+                                <li>Built and supported CI/CD pipelines and deployment workflows for multinational platforms.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card glass-panel">
-                    <div class="feature-number">0→1</div>
-                    <h3 class="feature-title">Escalabilidad de Equipos</h3>
-                    <p class="feature-desc">Habilidad demostrada para fundar y expandir operaciones de ingeniería tecnológica desde cero.</p>
+
+                <!-- Job 3 -->
+                <div class="timeline-item glass-panel">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">2015 – 2021</span>
+                        <span class="timeline-company">Symphony Technologies</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">
+                            <span lang="es">Founder &amp; CEO</span>
+                            <span lang="en">Founder &amp; CEO</span>
+                        </h3>
+                        <div lang="es">
+                            <p class="timeline-desc">Fundé y escalé una consultora de software entregando soluciones full-stack complejas para corporaciones y PyMEs.</p>
+                            <ul class="timeline-bullets">
+                                <li>Lideré y supervisé el ciclo completo de desarrollo (SDLC) de múltiples proyectos simultáneos usando Node.js, PHP, Java y Python.</li>
+                                <li>Coordiné recursos técnicos y arquitectónicos asegurando la excelencia técnica de los entregables.</li>
+                            </ul>
+                        </div>
+                        <div lang="en">
+                            <p class="timeline-desc">Founded and scaled a software development consultancy delivering full-stack solutions for enterprise clients and SMEs.</p>
+                            <ul class="timeline-bullets">
+                                <li>Managed the end-to-end SDLC for multiple concurrent projects using Node.js, PHP, Java, and Python.</li>
+                                <li>Remained directly involved in architectural reviews, client coordination, and delivery management.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item glass-panel">
+                    <div class="timeline-meta">
+                        <span class="timeline-date">Puntos Clave / Key Roles</span>
+                        <span class="timeline-company">Trayectoria Histórica</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">
+                            <span lang="es">Roles Previos de Liderazgo &amp; R&amp;D</span>
+                            <span lang="en">Previous Leadership &amp; R&amp;D Roles</span>
+                        </h3>
+                        <div lang="es">
+                            <p class="timeline-desc">Historial en acelerar la entrega de productos de software y optimización extrema de arquitecturas:</p>
+                            <ul class="timeline-bullets">
+                                <li>**Kubo Financiero (2015):** Optimicé el motor de precalificación crediticia reduciendo la latencia de servicios de terceros en un **90%** (de 5 minutos a 30 segundos).</li>
+                                <li>**MasNegocio (2012–2015) - R&amp;D Lead:** Fundé la división de ingeniería de software; escalé la plataforma de facturación electrónica en un **1100%** (de 100K a 1.2M de peticiones mensuales).</li>
+                                <li>**Hewlett-Packard (2009–2012) - Tech Lead:** Lideré un equipo de 7 personas e implementé el ciclo completo de desarrollo (SDLC) para sistemas del SAT (Servicio de Administración Tributaria).</li>
+                            </ul>
+                        </div>
+                        <div lang="en">
+                            <p class="timeline-desc">Proven history in accelerating product delivery and system optimizations:</p>
+                            <ul class="timeline-bullets">
+                                <li>**Kubo Financiero (2015):** Optimized the applicant risk pre-qualification pipeline, reducing third-party data API latency by **90%** (from 5 minutes to 30 seconds).</li>
+                                <li>**MasNegocio (2012–2015) - R&amp;D Lead:** Created the software division from scratch; scaled the electronic invoicing engine by **1100%** (from 100K to 1.2M requests/month).</li>
+                                <li>**Hewlett-Packard (2009–2012) - Tech Lead:** Managed a team of 7 and designed notifications systems for the Mexican Tax Authority (SAT).</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -156,48 +338,144 @@
         <!-- Projects & Exploration Section -->
         <section class="section-container" id="projects">
             <div class="section-intro text-center">
-                <h2 class="section-header-title">Exploraciones Tecnológicas</h2>
-                <p class="section-subtitle-desc">Prototipos, arquitecturas experimentales y proyectos actuales.</p>
+                <h2 class="section-header-title">
+                    <span lang="es">Exploraciones e Iniciativas Propias</span>
+                    <span lang="en">Explorations &amp; Side Projects</span>
+                </h2>
+                <p class="section-subtitle-desc">
+                    <span lang="es">Desarrollos y prototipos aplicando arquitecturas modernas e IA</span>
+                    <span lang="en">Prototyping and experimenting with modern architectures and AI</span>
+                </p>
             </div>
             
             <div class="projects-grid">
+                <!-- Project 1 -->
                 <div class="project-card glass-panel">
                     <div class="project-visual">
                         <div class="visual-gradient-1"></div>
-                        <span class="project-tag">Gemini SDK / Node.js</span>
+                        <span class="project-tag">AI / RAG / Docker</span>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Prototipado con Gemini CLI</h3>
-                        <p class="project-desc">Exploración de flujos autónomos y scripts eficientes para agilizar tareas repetitivas de desarrollo y análisis de sistemas mediante inteligencia artificial generativa local.</p>
-                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-cli-link">Ver repositorio GitHub &rarr;</a>
+                        <h3 class="project-title">Notaría Document Intelligence POC</h3>
+                        <p class="project-desc" lang="es">POC de búsqueda documental avanzada (RAG) para notarías mexicanas usando Ollama (gemma2:2b local), AnythingLLM y Docker en un VPS (Hetzner).</p>
+                        <p class="project-desc" lang="en">Document intelligence system (RAG) for Mexican notary offices using Ollama (local gemma2:2b), AnythingLLM, and Docker on a Hetzner Cloud VPS.</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-notaria-link">
+                            <span lang="es">Ver detalles &rarr;</span>
+                            <span lang="en">View details &rarr;</span>
+                        </a>
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="project-card glass-panel">
                     <div class="project-visual">
                         <div class="visual-gradient-2"></div>
-                        <span class="project-tag">Hexagonal / Event-Driven</span>
+                        <span class="project-tag">FastAPI / AI Agents</span>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Arquitecturas Experimentales</h3>
-                        <p class="project-desc">Diseño conceptual y plantillas listas para desplegar microservicios desacoplados bajo el paradigma DDD (Domain-Driven Design) y flujos basados en eventos.</p>
-                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-arch-link">Ver repositorio GitHub &rarr;</a>
+                        <h3 class="project-title">Hotel Guest Assistant</h3>
+                        <p class="project-desc" lang="es">Chatbot agente inteligente que integra Telegram, un modelo LLM local con Ollama y FastAPI para interactuar y responder en tiempo real con datos de un PMS.</p>
+                        <p class="project-desc" lang="en">Agentic chatbot integrating Telegram, Ollama (local LLM), and FastAPI to converse and orchestrate actions directly against a Property Management System (PMS).</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-hotel-link">
+                            <span lang="es">Ver detalles &rarr;</span>
+                            <span lang="en">View details &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual">
+                        <div class="visual-gradient-1"></div>
+                        <span class="project-tag">Vue 3 / Supabase / Resend</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Symphony CRM (sympho.app)</h3>
+                        <p class="project-desc" lang="es">Plataforma interna y portal de clientes (CRM) construida para reactivar Symphony como consultoría AI-first, desarrollada ágilmente con Claude Code y Resend.</p>
+                        <p class="project-desc" lang="en">Internal CRM (Ek Chuah) and client-facing platform built for reactivating Symphony as an AI-first software consultancy, built with Claude Code and Resend.</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-crm-link">
+                            <span lang="es">Ver detalles &rarr;</span>
+                            <span lang="en">View details &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-panel">
+                    <div class="project-visual">
+                        <div class="visual-gradient-2"></div>
+                        <span class="project-tag">Spring Boot / Python / C++</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fibo Data Pipeline</h3>
+                        <p class="project-desc" lang="es">Arquitectura de ingesta masiva de datos PEP (Politically Exposed Persons) desde fuentes públicas desestructuradas hacia Spring Boot, optimizando pipelines en Python/C++.</p>
+                        <p class="project-desc" lang="en">Data ingestion pipeline to aggregate and screen PEP (Politically Exposed Persons) data, re-engineering data processing into Python and C++ for high concurrency.</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-fibo-link">
+                            <span lang="es">Ver detalles &rarr;</span>
+                            <span lang="en">View details &rarr;</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Teaser Section -->
-        <section class="section-container" id="blog">
-            <div class="blog-teaser-card glass-panel">
-                <div class="blog-teaser-content">
-                    <span class="teaser-label">Espacio Futuro</span>
-                    <h2 class="teaser-title">Compartiendo conocimiento técnico</h2>
-                    <p class="teaser-desc">Muy pronto integraré mi blog personal en esta sección para escribir sobre liderazgo técnico, arquitectura de software basada en eventos y automatización con IA.</p>
-                    <div class="teaser-actions">
-                        <span class="badge badge-outline">Próximamente / Coming Soon</span>
-                    </div>
+        <!-- Contact Section -->
+        <section class="section-container" id="contact">
+            <div class="contact-card glass-panel">
+                <div class="contact-intro text-center">
+                    <h2 class="section-header-title">
+                        <span lang="es">¿Hablamos?</span>
+                        <span lang="en">Let's Connect</span>
+                    </h2>
+                    <p class="section-subtitle-desc">
+                        <span lang="es">Envíame un mensaje y se enviará directo a me@tellmeoz.dev usando Resend.</span>
+                        <span lang="en">Send me a message, routed directly to me@tellmeoz.dev using Resend.</span>
+                    </p>
                 </div>
+
+                <!-- Form feedback messages -->
+                <div id="form-feedback" class="form-feedback hidden" aria-live="polite"></div>
+
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="form-name">
+                                <span lang="es">Nombre completo</span>
+                                <span lang="en">Full Name</span>
+                            </label>
+                            <input type="text" id="form-name" name="name" required placeholder="Osvaldo Ortega">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">
+                                <span lang="es">Correo electrónico</span>
+                                <span lang="en">Email Address</span>
+                            </label>
+                            <input type="email" id="form-email" name="email" required placeholder="tu@correo.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">
+                            <span lang="es">Asunto</span>
+                            <span lang="en">Subject</span>
+                        </label>
+                        <input type="text" id="form-subject" name="subject" placeholder="Oportunidad de colaboración / Consulta">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">
+                            <span lang="es">Mensaje</span>
+                            <span lang="en">Message</span>
+                        </label>
+                        <textarea id="form-message" name="message" rows="5" required placeholder="Hola Osvaldo, me gustaría hablar contigo sobre..."></textarea>
+                    </div>
+
+                    <div class="form-actions text-center">
+                        <button type="submit" class="btn-primary" id="form-submit-btn">
+                            <span lang="es">Enviar Mensaje</span>
+                            <span lang="en">Send Message</span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -207,14 +485,27 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <a href="#" class="nav-logo" id="footer-logo">tellme<span class="logo-accent">oz</span></a>
-                <p class="footer-desc">Diseñando soluciones resilientes, liderando con empatía.</p>
+                <p class="footer-desc">
+                    <span lang="es">Diseñando soluciones resilientes, liderando con empatía.</span>
+                    <span lang="en">Designing resilient solutions, leading with empathy.</span>
+                </p>
             </div>
             <div class="footer-links">
                 <div class="footer-link-group">
-                    <strong>Navegación</strong>
-                    <a href="#about" id="footer-link-about">Sobre Mí</a>
-                    <a href="#experience" id="footer-link-exp">Experiencia</a>
-                    <a href="#projects" id="footer-link-proj">Exploraciones</a>
+                    <strong lang="es">Navegación</strong>
+                    <strong lang="en">Navigation</strong>
+                    <a href="#about" id="footer-link-about">
+                        <span lang="es">Sobre Mí</span>
+                        <span lang="en">About Me</span>
+                    </a>
+                    <a href="#experience" id="footer-link-exp">
+                        <span lang="es">Experiencia</span>
+                        <span lang="en">Experience</span>
+                    </a>
+                    <a href="#projects" id="footer-link-proj">
+                        <span lang="es">Proyectos</span>
+                        <span lang="en">Projects</span>
+                    </a>
                 </div>
                 <div class="footer-link-group">
                     <strong>Contacto</strong>
@@ -225,7 +516,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Osvaldo Ortega Martinez. Hecho con ❤️ y CSS Vanilla.</p>
+            <p lang="es">&copy; 2026 Osvaldo Ortega Martinez. Hecho con ❤️ y CSS Vanilla.</p>
+            <p lang="en">&copy; 2026 Osvaldo Ortega Martinez. Built with ❤️ and Vanilla CSS.</p>
         </div>
     </footer>
 
