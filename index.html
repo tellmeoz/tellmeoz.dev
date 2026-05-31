@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osvaldo Ortega Martinez | Software Engineering Leader & Cloud Architect</title>
+    <meta name="description" content="Personal portfolio of Osvaldo Ortega Martinez, a Software Engineering Leader & Cloud Solutions Architect with over 18 years of experience. Specializing in high-performance teams, rapid prototyping, and Generative AI.">
+    <meta name="color-scheme" content="light dark">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Osvaldo Ortega Martinez | Software Engineering Leader & Cloud Architect">
+    <meta property="og:description" content="Software Engineering Leader with 18+ years of experience. Expert in Cloud Solutions, Event-Driven Architectures, and Generative AI rapid prototyping.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tellmeoz.dev/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Theme Initializer (Avoids FOUC for localStorage preference) -->
+    <script>
+        {
+            const theme = localStorage.getItem("theme");
+            if (theme === "light" || theme === "dark") {
+                document.documentElement.setAttribute("data-theme", theme);
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="glow-bg" aria-hidden="true">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">tellme<span class="logo-accent">oz</span></a>
+            <nav class="nav-menu" aria-label="Main Navigation">
+                <a href="#about" class="nav-link" id="nav-link-about">Sobre Mí</a>
+                <a href="#experience" class="nav-link" id="nav-link-exp">Experiencia</a>
+                <a href="#projects" class="nav-link" id="nav-link-proj">Exploraciones</a>
+                <a href="#blog" class="nav-link" id="nav-link-blog">Blog</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light and dark theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="mailto:me@tellmeoz.dev" class="btn-primary" id="header-contact-btn">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="badge" id="hero-badge">Disponible para Prototipado Rápido</div>
+                <h1 class="hero-title">Osvaldo Ortega Martinez</h1>
+                <p class="hero-subtitle">Software Engineering Leader &amp; Cloud Solutions Architect</p>
+                <p class="hero-desc">Especialista en escalar operaciones de ingeniería, diseñar arquitecturas robustas y prototipar soluciones innovadoras con IA Generativa.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-secondary" id="hero-learn-more">Conóceme más</a>
+                    <a href="mailto:me@tellmeoz.dev" class="btn-primary" id="hero-contact-mail">me@tellmeoz.dev</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section-container" id="about">
+            <div class="section-grid">
+                <div class="about-card glass-panel">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <p class="section-text">
+                        Con más de 18 años de trayectoria en la industria tecnológica, lidero operaciones de ingeniería y arquitectura en la nube para entornos globales. Me apasiona traducir requerimientos de negocio complejos en plataformas técnicas de alto rendimiento, escalables y seguras.
+                    </p>
+                    <p class="section-text">
+                        Fundador de equipos de desarrollo y experto en operaciones críticas 24/7. Aplico tecnologías de frontera como GenAI (Gemini, ChatGPT) para acelerar el desarrollo de prototipos y validar arquitecturas avanzadas (Hexagonal, Event-Driven, Microservicios).
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="social-link" id="github-link" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/tellmeoz" target="_blank" rel="noopener" class="social-link" id="linkedin-link" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="skills-card glass-panel">
+                    <h3 class="card-subtitle">Áreas de Enfoque</h3>
+                    <ul class="skills-list" aria-label="Focus Areas">
+                        <li class="skill-item">
+                            <span class="skill-icon">☁️</span>
+                            <div>
+                                <strong>Arquitectura Cloud</strong>
+                                <p>Sistemas distribuidos, hexagonal, microservicios y event-driven.</p>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">👥</span>
+                            <div>
+                                <strong>Liderazgo de Equipos</strong>
+                                <p>Crecimiento de talento, cultura ágil y operaciones regionales.</p>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">⚡</span>
+                            <div>
+                                <strong>Prototipado Rápido &amp; IA</strong>
+                                <p>Implementaciones exprés aceleradas por Gemini, ChatGPT y APIs avanzadas.</p>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-icon">🔒</span>
+                            <div>
+                                <strong>Operaciones 24/7</strong>
+                                <p>Estrategias de despliegue continuo, tolerancia a fallos y resiliencia.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Mindset Section -->
+        <section class="section-container" id="experience">
+            <h2 class="section-header-title text-center">Filosofía de Trabajo</h2>
+            <div class="features-grid">
+                <div class="feature-card glass-panel">
+                    <div class="feature-number">18+</div>
+                    <h3 class="feature-title">Años de Experiencia</h3>
+                    <p class="feature-desc">Trayectoria sólida construyendo software desde startups hasta operaciones globales.</p>
+                </div>
+                <div class="feature-card glass-panel">
+                    <div class="feature-number">AI</div>
+                    <h3 class="feature-title">Eficiencia con GenAI</h3>
+                    <p class="feature-desc">Utilización activa de Large Language Models para automatizar, diseñar y refactorizar con agilidad.</p>
+                </div>
+                <div class="feature-card glass-panel">
+                    <div class="feature-number">0→1</div>
+                    <h3 class="feature-title">Escalabilidad de Equipos</h3>
+                    <p class="feature-desc">Habilidad demostrada para fundar y expandir operaciones de ingeniería tecnológica desde cero.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Exploration Section -->
+        <section class="section-container" id="projects">
+            <div class="section-intro text-center">
+                <h2 class="section-header-title">Exploraciones Tecnológicas</h2>
+                <p class="section-subtitle-desc">Prototipos, arquitecturas experimentales y proyectos actuales.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-panel">
+                    <div class="project-visual">
+                        <div class="visual-gradient-1"></div>
+                        <span class="project-tag">Gemini SDK / Node.js</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Prototipado con Gemini CLI</h3>
+                        <p class="project-desc">Exploración de flujos autónomos y scripts eficientes para agilizar tareas repetitivas de desarrollo y análisis de sistemas mediante inteligencia artificial generativa local.</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-cli-link">Ver repositorio GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="project-visual">
+                        <div class="visual-gradient-2"></div>
+                        <span class="project-tag">Hexagonal / Event-Driven</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Arquitecturas Experimentales</h3>
+                        <p class="project-desc">Diseño conceptual y plantillas listas para desplegar microservicios desacoplados bajo el paradigma DDD (Domain-Driven Design) y flujos basados en eventos.</p>
+                        <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" class="project-link" id="project-arch-link">Ver repositorio GitHub &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Teaser Section -->
+        <section class="section-container" id="blog">
+            <div class="blog-teaser-card glass-panel">
+                <div class="blog-teaser-content">
+                    <span class="teaser-label">Espacio Futuro</span>
+                    <h2 class="teaser-title">Compartiendo conocimiento técnico</h2>
+                    <p class="teaser-desc">Muy pronto integraré mi blog personal en esta sección para escribir sobre liderazgo técnico, arquitectura de software basada en eventos y automatización con IA.</p>
+                    <div class="teaser-actions">
+                        <span class="badge badge-outline">Próximamente / Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo" id="footer-logo">tellme<span class="logo-accent">oz</span></a>
+                <p class="footer-desc">Diseñando soluciones resilientes, liderando con empatía.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-link-group">
+                    <strong>Navegación</strong>
+                    <a href="#about" id="footer-link-about">Sobre Mí</a>
+                    <a href="#experience" id="footer-link-exp">Experiencia</a>
+                    <a href="#projects" id="footer-link-proj">Exploraciones</a>
+                </div>
+                <div class="footer-link-group">
+                    <strong>Contacto</strong>
+                    <a href="mailto:me@tellmeoz.dev" class="email-link" id="footer-link-email">me@tellmeoz.dev</a>
+                    <a href="https://linkedin.com/in/tellmeoz" target="_blank" rel="noopener" id="footer-link-li">LinkedIn</a>
+                    <a href="https://github.com/tellmeoz" target="_blank" rel="noopener" id="footer-link-gh">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Osvaldo Ortega Martinez. Hecho con ❤️ y CSS Vanilla.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
