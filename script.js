@@ -89,13 +89,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const messages = {
                 es: {
                     sending: "Enviando mensaje...",
-                    success: "¡Mensaje enviado con éxito! Se ha dirigido a me@tellmeoz.dev.",
+                    success: "¡Mensaje enviado con éxito! Se ha dirigido a hi@tellmeoz.dev.",
                     error: "Hubo un error al enviar el mensaje. Por favor intenta de nuevo.",
                     missing: "Por favor completa todos los campos requeridos."
                 },
                 en: {
                     sending: "Sending message...",
-                    success: "Message sent successfully! Routed to me@tellmeoz.dev.",
+                    success: "Message sent successfully! Routed to hi@tellmeoz.dev.",
                     error: "There was an error sending your message. Please try again.",
                     missing: "Please fill in all required fields."
                 }

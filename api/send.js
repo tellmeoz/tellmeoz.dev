@@ -41,7 +41,7 @@ export default async function handler(req, res) {
             },
             body: JSON.stringify({
                 from: 'Web Contact Form <contacto@tellmeoz.dev>',
-                to: ['me@tellmeoz.dev'],
+                to: ['hi@tellmeoz.dev'],
                 reply_to: email,
                 subject: `[Web Contact] ${subject || 'Nuevo mensaje de contacto'}`,
                 html: `
