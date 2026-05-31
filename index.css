@@ -51,30 +51,30 @@
         color-scheme: light dark;
 
         /* Design Tokens - Light Theme Default Colors */
-        --bg-color-light: oklch(98% 0.01 240);
+        --bg-color-light: oklch(98% 0.005 60); /* Soft warm alabaster */
         --bg-surface-light: oklch(100% 0 0 / 70%);
         --bg-panel-light: oklch(100% 0 0 / 60%);
-        --text-primary-light: oklch(18% 0.01 240);
-        --text-secondary-light: oklch(40% 0.02 240);
-        --accent-primary-light: oklch(50% 0.22 285); /* Deep Violet */
-        --accent-secondary-light: oklch(55% 0.16 200); /* Cyan */
+        --text-primary-light: oklch(18% 0.01 60);
+        --text-secondary-light: oklch(40% 0.01 60);
+        --accent-primary-light: oklch(62% 0.15 76); /* Warm Gold */
+        --accent-secondary-light: oklch(58% 0.20 48); /* Solar Orange */
         --border-color-light: oklch(0% 0 0 / 8%);
         --shadow-color-light: oklch(0% 0 0 / 4%);
-        --glow-1-light: oklch(85% 0.1 280 / 12%);
-        --glow-2-light: oklch(88% 0.08 200 / 12%);
+        --glow-1-light: oklch(90% 0.08 76 / 15%);
+        --glow-2-light: oklch(90% 0.1 48 / 12%);
 
         /* Design Tokens - Dark Theme Default Colors */
-        --bg-color-dark: oklch(12% 0.015 240); /* Obsidian Slate */
-        --bg-surface-dark: oklch(16% 0.02 240 / 75%);
-        --bg-panel-dark: oklch(18% 0.025 240 / 60%);
-        --text-primary-dark: oklch(93% 0.01 240);
-        --text-secondary-dark: oklch(75% 0.015 240);
-        --accent-primary-dark: oklch(68% 0.21 285); /* Electric Purple */
-        --accent-secondary-dark: oklch(72% 0.15 195); /* Bright Cyan */
+        --bg-color-dark: oklch(7% 0.005 30); /* Warm Deep Obsidian Black */
+        --bg-surface-dark: oklch(11% 0.01 30 / 75%);
+        --bg-panel-dark: oklch(13% 0.015 30 / 60%);
+        --text-primary-dark: oklch(93% 0.008 240); /* Metallic Silver / Platinum */
+        --text-secondary-dark: oklch(76% 0.01 240); /* Muted Silver */
+        --accent-primary-dark: oklch(78% 0.14 78); /* Champagne Metallic Gold */
+        --accent-secondary-dark: oklch(68% 0.22 48); /* Vibrant Solar Orange */
         --border-color-dark: oklch(100% 0 0 / 8%);
-        --shadow-color-dark: oklch(0% 0 0 / 40%);
-        --glow-1-dark: oklch(55% 0.2 285 / 15%);
-        --glow-2-dark: oklch(60% 0.15 195 / 15%);
+        --shadow-color-dark: oklch(0% 0 0 / 50%);
+        --glow-1-dark: oklch(78% 0.14 78 / 18%); /* Gold Glow */
+        --glow-2-dark: oklch(68% 0.22 48 / 18%); /* Orange Glow */
 
         /* Dynamic Tokens mapping using light-dark() */
         --bg-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
@@ -775,14 +775,14 @@
     .visual-gradient-1 {
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg in oklch, oklch(40% 0.2 300), oklch(65% 0.15 200));
+        background: linear-gradient(135deg in oklch, oklch(40% 0.15 78), oklch(65% 0.2 48));
         opacity: 0.85;
     }
 
     .visual-gradient-2 {
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg in oklch, oklch(50% 0.18 200), oklch(45% 0.22 140));
+        background: linear-gradient(135deg in oklch, oklch(55% 0.2 48), oklch(30% 0.01 240));
         opacity: 0.85;
     }
 
